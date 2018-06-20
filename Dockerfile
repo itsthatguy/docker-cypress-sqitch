@@ -13,8 +13,8 @@ RUN sudo apt-get install --yes --quiet \
   libdbd-pg-perl \
   postgresql-client
 
-RUN npm install cypress --global
-RUN cypress install
+RUN sudo npm install cypress --global
+RUN sudo cypress install
 
 # versions of local tools
 RUN node -v
